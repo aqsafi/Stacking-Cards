@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+html{
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background: linear-gradient(to right top, #4467F5, #99F690);
+}
+
+h2{
+  font-size: 5rem;
+  font-family: "ubuntu", sans-serif
+}
+
+
+  section{
+    min-width: 50vw;
+  }
+
+.cards{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 400px;
+
+
+}
+
+.card{
+width: 250px;
+height: 250px;
+  
+}
+
+.card:not(:first-child) {
+  margin-left: -2rem;
+}
+
+.card:hover {
+  transform: translateY(-1rem);
+  transition: 0.5s;
+}
+
+.card:hover ~ .card{
+  transform: translateX(2rem);
+  transition: 0.5s;
+}
+
+
+section div{
+margin-top: 50px;
+ margin-inline: 10px;
+ background: linear-gradient(to left top, lightgreen, rgb(96, 154, 221));
+ border-radius: 1rem;
+ padding: 20px;
+ margin-left: -2.5rem;
+ box-shadow: 4px 4px 15px 2px rgba(#333, 0.6);
+}
